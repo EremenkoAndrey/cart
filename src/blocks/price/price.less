@@ -1,0 +1,27 @@
+@import "../../common/less/variables";
+
+.price {
+  color: @baseTextColor;
+  font-weight: normal;
+
+  &::after {
+    content: ' р.';
+    font-size: 0.9em;
+  }
+
+  &_old {
+    text-decoration: line-through;
+  }
+  &_sale {
+    color: @secondColor;
+  }
+  &_bold {
+    font-weight: bold;
+  }
+  &_small {
+    font-size: 0.75em;
+  }
+  &_big {
+    font-size: 1.25em;
+  }
+}

@@ -1,0 +1,77 @@
+@import (less) "./../bower_components/normalize-css/normalize.css";
+@import (reference) "./../bower_components/bootstrap/less/bootstrap.less";
+@import "common/less/variables.less";
+@import "./../bower_components/bootstrap/less/mixins/clearfix.less";
+
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 1em 0 0.5em;
+  color: @accentTextColor;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  .h4;
+}
+h5 {
+  .h5;
+}
+h6 {
+  .h6;
+}
+p {
+  margin: 0 0 1rem;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.clearfix {
+  .clearfix();
+}
+
+.error,
+.success {
+  text-align: center;
+}
+.success {
+  color: green;
+}
+.error {
+  color: red;
+}
+.center {
+  text-align: center;
+}
+
+@import "common/less/grid.less";
+@import "blocks/page/page.less";
+@import "blocks/content/content.less";

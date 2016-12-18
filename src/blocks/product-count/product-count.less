@@ -1,0 +1,60 @@
+@import "../../common/less/variables";
+
+.product-count {
+  position: relative;
+  height: 59px;
+  padding: 1px (59px / 2) 1px 1px;
+  vertical-align: top;
+  border: 1px solid @commonBorderColor;
+
+  &__button {
+    display: block;
+    position: absolute;
+    right: 1px;
+    line-height: 1;
+    padding: 0;
+    vertical-align: middle;
+    height: (59px - 4px - 1px) / 2;
+    width: (59px - 4px - 1px) / 2;
+    text-align: center;
+
+    &:hover(:not(.btn-default_disable)) {
+      opacity: 0.9;
+    }
+
+    &_plus,
+    &_plus:hover {
+      top: 1px;
+      background-image: url('plus_25_white.svg');
+      background-repeat: no-repeat;
+    }
+    &_minus,
+    &_minus:hover {
+      bottom: 1px;
+      background-image: url('minus_25_white.svg');
+      background-repeat: no-repeat;
+    }
+
+}
+
+  &__input {
+    height: 100%;
+    border: 0;
+    margin: 0;
+    padding: 2px 5px;
+    font-size: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+    max-width: 100%;
+  }
+}
+
+@media all and (max-width: @screen-sm){
+  .product-count {
+    &__input {
+      width: 100%;
+    }
+  }
+}
